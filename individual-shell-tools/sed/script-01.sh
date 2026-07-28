@@ -6,5 +6,5 @@ set -euo pipefail
 # The output should contain 11 lines.
 # The first line of the output should be: "ThIs Is a sample fIle for experImentIng with sed.".
 
-cd individual-shell-tools/sed
+
 sed 's/i/I/g' input.txt

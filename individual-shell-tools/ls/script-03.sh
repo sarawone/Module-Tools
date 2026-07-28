@@ -3,8 +3,7 @@
 set -euo pipefail
 
 # TODO: Write a command which _recursively_ lists all of the files and folders in this directory _and_ all of the files inside those folders.
-cd individual-shell-tools/ 
-cd ls
+
 ls -R
 
 # The output should be a list of names including: child-directory, script-01.sh, helper-1.txt (and more).

@@ -6,5 +6,5 @@ set -euo pipefail
 # Your output should contain 6 lines, each with one word and one number on it.
 # The first line should be "Ahmed 1".
 
-cd individual-shell-tools/awk
+
 awk '{print $1, $3}' scores-table.txt

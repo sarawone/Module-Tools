@@ -14,6 +14,6 @@ set -euo pipefail
 # 4 I was tempted to take a bite of it.
 # 5 But this seemed like a bad idea...
 
-cd individual-shell-tools/helper-files
+
 cat helper-1.txt helper-2.txt helper-3.txt | nl
 
