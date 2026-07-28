@@ -34,7 +34,7 @@ Q9: How many bits would you need in order to store the numbers between 0 and 3 i
 Answer:2 bits
 
 Q10: How many bits would you need in order to store the numbers between 0 and 1000 inclusive?
-Answer:32 bits
+Answer:10 bits
 
 Q11: Convert the decimal number 14 to hex.
 Answer: E
