@@ -1,6 +1,6 @@
 # adding type annotation
 
-def open_account(balances: dict[str,int], name:str, amount: float) -> None:
+def open_account(balances: dict[str,int], name:str, amount: int) -> None:
     balances[name] = amount
 
 def sum_balances(accounts: dict[str,int]) ->int:
@@ -10,7 +10,7 @@ def sum_balances(accounts: dict[str,int]) ->int:
         total += pence
     return total
 
-def format_pence_as_string(total_pence: int) -> float:
+def format_pence_as_string(total_pence: int) -> str:
     if total_pence < 100:
         return f"{total_pence}p"
     pounds = int(total_pence / 100)
@@ -23,10 +23,11 @@ balances: dict[str,int] = {
     "Georg": 831,
 }
 
-open_account("Tobi", 9.13)
-open_account("Olya", "£7.13")
+#changing float to int (9.13 to 913)
+open_account(balances,"Tobi", 913)
+open_account(balances,"Olya", 713)
 
 total_pence = sum_balances(balances)
-total_string = format_pence_as_str(total_pence)
+total_string = format_pence_as_string(total_pence) #correct the function name
 
 print(f"The bank accounts total {total_string}")
